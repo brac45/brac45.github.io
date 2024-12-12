@@ -2,6 +2,7 @@
 title: "Pokecoach: Using Haptic and Audio Feedback to Visualize Time-series Data"
 excerpt: "An iOS app made using SwiftUI that uses vibration intensity and audio to visualize your heart rate during your jog. <br/><img src='/images/clipped-pokecoach.gif' alt='Screenshots of pokecoach, that shows a time-series data and the user navigating the data'>"
 collection: tinkering
+number: 1
 ---
 
 <img src='/images/clipped-pokecoach.gif' alt='Screenshots of pokecoach, that shows a time-series data and the user navigating the data'>

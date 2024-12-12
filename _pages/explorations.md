@@ -9,8 +9,8 @@ author_profile: true
 
 Here's a collection of various small projects and tidbits that I worked on in the past.
 
-
-{% for post in site.tinkering %}
+{% assign sorted = site.tinkering | sort: 'number' %}
+{% for post in sorted %}
   {% include archive-single.html %}
 {% endfor %}
 
