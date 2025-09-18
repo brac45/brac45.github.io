@@ -1,0 +1,9 @@
+# News items displayed on the homepage (/_pages/about.md)
+# Add newest items to the top; `date` should be ISO (YYYY-MM-DD)
+
+- date: 2024-12-30
+  title: "New paper in IMWUT on GoalTrack released"
+  link: "/publication/2024-12-30-imwut-goaltrack"
+  description: "Our latest work on goal tracking for stroke rehabilitation is now available."
+
+
