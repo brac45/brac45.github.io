@@ -3,7 +3,6 @@ title: "Neutralizing BLE Beacon-based Electronic Attendance System using Signal 
 collection: publications"
 category: fullpapers
 permalink: /publication/2018-12-02-ble-ieee-access
-excerpt: 'Many emerging location- or proximity-based applications use Bluetooth low energy (BLE) beacons thanks to the increasing popularity of the technology in mobile systems. An outstanding example is the BLE beacon-based electronic attendance system (BEAS) used in many universities today to increase the efficiency of lectures. Despite its popularity and usefulness, however, BEAS has not been thoroughly analyzed for its potential vulnerabilities. In this paper, we neutralize a university&apos;s BEAS by maliciously cheating attendance (i.e., faking attendance while the subject is not physically present at the location) in various scenarios using signal imitation attack, and investigate its possible vulnerabilities. The BEAS exploited in this paper is a commercial system actually used in a well-known university. After the exploitation experiment, we analyze the system&apos;s weaknesses and present possible counter-measures. Furthermore, additional attack methods are shown to re-counteract those possible counter-measures and to discuss the fundamental challenges, deficiencies, and suggestions in electronic attendance systems using BLE beacons.'
 date: 2018-12-02
 venue: 'IEEE Access'
 paperurl: 'https://doi.org/10.1109/ACCESS.2018.2884488'

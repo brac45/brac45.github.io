@@ -1,9 +1,15 @@
 # News items displayed on the homepage (/_pages/about.md)
 # Add newest items to the top; `date` should be ISO (YYYY-MM-DD)
 
-- date: 2024-12-30
-  title: "New paper in IMWUT on GoalTrack released"
-  link: "/publication/2024-12-30-imwut-goaltrack"
-  description: "Our latest work on goal tracking for stroke rehabilitation is now available."
+- date: 2025-10-27
+  title: "Participating in ACM ASSETS 2025 Doctoral Consortium!"
+  description: "I'm attending this year's ASSETS DC to present my on-going dissertation work and learn from mentors."
 
+- date: 2025-07-05
+  title: "New paper on AI-driven design probes for AAC and people with aphasia!"
+  link: "https://dl.acm.org/doi/full/10.1145/3715336.3735736"
+  description: "Our latest work on learning people with aphasia's perspectives on AI-driven AAC technology is published at ACM DIS 2025!"
 
+- date: 2025-05-27
+  title: "UX Researcher internship at Microsoft"
+  description: "I'll be at Microsoft as a UX Researcher intern during this Summer, where I'll be working on conducting UX benchmark studies and telemetry analysis for Microsoft Fabric."
