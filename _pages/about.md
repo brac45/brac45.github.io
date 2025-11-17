@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Human-Computer Interaction (HCI) researcher and software engineer, where I'm a Ph.D. candidate at the [University of Maryland, College Park](https://ischool.umd.edu/) (UMD). I'm a current member of the [Human-Computer Interaction Lab at UMD](https://hcil.umd.edu/). I'm currently advised by [Dr. Stephanie Valencia^2](https://stephanie-valencia.com/), where I research accessible computer-mediated technology for people with aphasia[^1].
+I'm a researcher and a software developer, where I'm a Ph.D. candidate at the [University of Maryland, College Park](https://ischool.umd.edu/) (UMD). I'm a current member of the [Human-Computer Interaction Lab at UMD](https://hcil.umd.edu/). I'm currently advised by [Dr. Stephanie Valencia^2](https://stephanie-valencia.com/), where I research accessible computer-mediated technology for people with aphasia[^1].
 
 [^1]: Language impairment that affect's a person's ability to understand and produce language, usually caused by damage to the language portion in the brain.
 
@@ -26,7 +26,7 @@ I completed my M.S. in Computer Science at the [University of California, Irvine
   <li>
     <span>{{ item.date | date: "%b %-d, %Y" }}</span> —
     {% if item.link %}<a href="{{ item.link | relative_url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
-    {% if item.description %}<span> — {{ item.description }}</span>{% endif %}
+    {% if item.description %} <br> <span> {{ item.description }}</span>{% endif %}
   </li>
 {% endfor %}
 </ul>
