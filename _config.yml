@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Jong Ho Lee"
+title                    : "Michael Lee"
 title_separator          : "-"
 name                     : &name "Jong Ho Lee"
 description              : &description "Human-Computer Interaction Researcher"
@@ -22,7 +22,7 @@ repository               : "brac45/brac45.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Jong Ho (Michael) Lee"
+  name             : "Michael (Jong Ho) Lee"
   pronouns         : "he/him"  
   bio              : "Human-Computer Interaction researcher and software engineer. Currently a Ph.D. candidate at the University of Maryland, College Park."
   location         : "College Park, MD, USA"
