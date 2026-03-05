@@ -56,7 +56,7 @@ function PubItem({ pub, isLast }: { pub: Publication; isLast: boolean }) {
               href={pub.pdf}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: palette.textSoft, textDecoration: "none" }}
+              style={{ color: palette.accent, textDecoration: "none" }}
             >
               [Paper]
             </a>

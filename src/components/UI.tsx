@@ -25,21 +25,18 @@ import { useState, useEffect, useRef, type ReactNode, type CSSProperties } from 
 // Centralizing colors here means we only change them in one place
 // to update the entire site's look.
 // Sourced from a Coolors palette (see src/palette.scss for the full export):
-//   dark-spruce (#2f4b26), sea-green (#3e885b), muted-teal (#85bda6),
-//   icy-blue (#bedcfe), tea-green (#c0d7bb)
+//   ghost-white (#e8e9f3), silver (#cecece), pale-slate (#a6a6a8),
+//   shadow-grey (#272635), frosted-blue (#b1e5f2)
 // Some tokens are derived shades to meet WCAG AA contrast requirements.
 const palette = {
-  bg: "#85bda6",              // Page background — muted-teal
-  surface: "#FFFFFF",         // Card/content background (white for readability)
-  text: "#2f4b26",            // Primary text — dark-spruce (~9:1 contrast on white)
-  textSoft: "#4a6741",        // Secondary/muted text — darkened muted-teal (~5:1 on white)
-  accent: "#3e885b",          // Links, active states — sea-green (~4.5:1 on white)
-  accentSoft: "rgba(62,136,91,0.12)", // Faint hover background — sea-green @ 12% opacity
-  border: "#bedcfe",          // Card & section borders — icy-blue
-  borderHover: "#6aa68c",     // Darker border on hover — darkened muted-teal
-  tag: "#deeedd",             // Tag/badge background — lightened tea-green
-  dark: "#2f4b26",            // Navbar background — dark-spruce
-  darkText: "#c0d7bb",        // Text on dark backgrounds — tea-green
+  text: "#272635",            // Primary text — shadow-grey (~14:1 contrast on white)
+  textSoft: "#272635",        // Secondary/muted text — pale-slate (~3:1 on white)
+  accent: "#2b7a8c",          // Links, active states — darkened frosted-blue (~5:1 on white)
+  accentSoft: "rgba(177,229,242,0.15)", // Faint hover background — frosted-blue @ 15% opacity
+  border: "#d9d9d9",          // Card & section borders — light grey
+  tag: "#d6f0f7",             // Tag/badge background — lightened frosted-blue
+  dark: "#272635",            // Navbar background — shadow-grey
+  darkText: "#e8e9f3",        // Text on dark backgrounds — ghost-white
 };
 
 // Named export: other files import this as `import { palette } from "./UI"`

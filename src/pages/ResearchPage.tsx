@@ -46,7 +46,7 @@ function ResearchCard({ item }: { item: ResearchItem }) {
     >
       {/* Optional cover image */}
       {item.image && (
-        <div style={{ width: "100%", height: 180, overflow: "hidden", background: "#e9ecef" }}>
+        <div style={{ width: "100%", height: 180, overflow: "hidden", background: "#cecece" }}>
           <img
             src={item.image}
             alt={item.title}
@@ -80,7 +80,7 @@ export default function ResearchPage() {
       <FadeIn>
         <SectionHeader title="Research" />
         <p style={{ fontSize: 15, lineHeight: 1.75, color: palette.textSoft, margin: "0 0 24px" }}>
-          You can find my research projects, both academic and personal, here. My interests across various topics in HCI research, to building novel software tools.
+          You can find my research projects, both academic and personal, here. My interests span various topics in user research, to building novel software tools.
         </p>
       </FadeIn>
 

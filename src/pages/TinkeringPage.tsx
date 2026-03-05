@@ -46,7 +46,7 @@ function TinkerCard({ project }: { project: Project }) {
       {/* Optional cover image — uses objectFit: cover to fill the area
           without distorting the image's aspect ratio */}
       {project.image && (
-        <div style={{ width: "100%", height: 360, overflow: "hidden", background: "#e9ecef" }}> {/* 180px = thumbnail height for consistent card proportions */}
+        <div style={{ width: "100%", height: 360, overflow: "hidden", background: "#cecece" }}> {/* 180px = thumbnail height for consistent card proportions */}
           <img
             src={project.image}
             alt={project.title}

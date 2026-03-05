@@ -70,7 +70,7 @@ function ProfileSidebar() {
                 href={`mailto:${cfg.email}`}
                 style={{
                   fontFamily: "monospace",  // Monospace font for email (visual convention)
-                  color: palette.textSoft,
+                  color: palette.accent,
                   textDecoration: "none",
                 }}
               >
@@ -82,17 +82,17 @@ function ProfileSidebar() {
           {/* Social media links — stacked vertically with label + icon */}
           <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 13 }}>
             {cfg.linkedin && (
-              <a href={cfg.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: palette.textSoft, textDecoration: "none" }}>
+              <a href={cfg.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: palette.accent, textDecoration: "none" }}>
                 LinkedIn <i className="fab fa-linkedin" />
               </a>
             )}
             {cfg.scholar && (
-              <a href={cfg.scholar} target="_blank" rel="noopener noreferrer" style={{ color: palette.textSoft, textDecoration: "none" }}>
+              <a href={cfg.scholar} target="_blank" rel="noopener noreferrer" style={{ color: palette.accent, textDecoration: "none" }}>
                 Google Scholar <i className="fab fa-google-scholar" />
               </a>
             )}
             {cfg.github && (
-              <a href={cfg.github} target="_blank" rel="noopener noreferrer" style={{ color: palette.textSoft, textDecoration: "none" }}>
+              <a href={cfg.github} target="_blank" rel="noopener noreferrer" style={{ color: palette.accent, textDecoration: "none" }}>
                 Github <i className="fab fa-github" />
               </a>
             )}
@@ -188,7 +188,7 @@ function NewsCard() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: palette.text, textDecoration: "none" }}
+                  style={{ color: palette.accent, textDecoration: "none" }}
                 >
                   {item.title}
                 </a>
@@ -250,7 +250,7 @@ function SelectedPublicationsCard({ onNav }: { onNav: (page: string) => void }) 
                   href={pub.pdf}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: palette.textSoft, textDecoration: "none", marginRight: 8 }}
+                  style={{ color: palette.accent, textDecoration: "none", marginRight: 8 }}
                 >
                   [Paper]
                 </a>
