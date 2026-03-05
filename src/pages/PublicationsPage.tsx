@@ -10,7 +10,7 @@ import { siteConfig } from "../siteConfig";
 //   never as a runtime value, so the `type` keyword keeps it out of the
 //   final JavaScript bundle — a minor optimization.
 import { getPublications, type Publication } from "../content";
-import { FadeIn, palette } from "../components/UI";
+import { FadeIn, LinkPill, palette } from "../components/UI";
 
 // Fetch all publications once at module load time.
 // Because import.meta.glob uses { eager: true }, this is synchronous.
@@ -50,17 +50,8 @@ function PubItem({ pub, isLast }: { pub: Publication; isLast: boolean }) {
           </p>
         )}
         {/* Links and tags row */}
-        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", fontSize: 13 }}>
-          {pub.pdf && (
-            <a
-              href={pub.pdf}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: palette.accent, textDecoration: "none" }}
-            >
-              [Paper]
-            </a>
-          )}
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center", fontSize: 13 }}>
+          {pub.pdf && <LinkPill href={pub.pdf} label="Paper" />}
           {/* (pub.tags || []) is a safety pattern: if pub.tags is undefined,
               use an empty array so .map() doesn't crash. */}
           {(pub.tags || []).map((t, i) => (

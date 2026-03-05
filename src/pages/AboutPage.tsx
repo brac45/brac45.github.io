@@ -17,7 +17,7 @@ import { getNews, getPublications, type NewsItem as NewsItemType } from "../cont
 //   2. `as NewsItemType` renames it to avoid confusion with any local
 //      variable or component that might also be called "NewsItem"
 //   The original name `NewsItem` from content/index.ts becomes `NewsItemType` here.
-import { FadeIn, Card, CardHeader, CardBody, palette, parseBioLinks } from "../components/UI";
+import { FadeIn, Card, CardHeader, CardBody, LinkPill, palette, parseBioLinks } from "../components/UI";
 
 // ─── Data fetching (runs once at module load time) ─────────────────
 // These calls happen when this file is first imported. Because Vite's
@@ -79,23 +79,11 @@ function ProfileSidebar() {
             </div>
           )}
 
-          {/* Social media links — stacked vertically with label + icon */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 13 }}>
-            {cfg.linkedin && (
-              <a href={cfg.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: palette.accent, textDecoration: "none" }}>
-                LinkedIn <i className="fab fa-linkedin" />
-              </a>
-            )}
-            {cfg.scholar && (
-              <a href={cfg.scholar} target="_blank" rel="noopener noreferrer" style={{ color: palette.accent, textDecoration: "none" }}>
-                Google Scholar <i className="fab fa-google-scholar" />
-              </a>
-            )}
-            {cfg.github && (
-              <a href={cfg.github} target="_blank" rel="noopener noreferrer" style={{ color: palette.accent, textDecoration: "none" }}>
-                Github <i className="fab fa-github" />
-              </a>
-            )}
+          {/* Social media links — stacked vertically as pill buttons */}
+          <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "center" }}>
+            {cfg.linkedin && <LinkPill href={cfg.linkedin} label="LinkedIn" icon="fab fa-linkedin" />}
+            {cfg.scholar && <LinkPill href={cfg.scholar} label="Google Scholar" icon="fab fa-google-scholar" />}
+            {cfg.github && <LinkPill href={cfg.github} label="Github" icon="fab fa-github" />}
           </div>
         </CardBody>
       </Card>
@@ -129,16 +117,7 @@ function AboutCard() {
           </p>
         ))}
         {/* CV link — Font Awesome file icon + clickable text */}
-        {cfg.cvUrl && (
-          <a
-            href={cfg.cvUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ fontSize: 14, color: palette.accent, textDecoration: "none" }}
-          >
-            <i className="fas fa-file-alt" /> Curriculum Vitae
-          </a>
-        )}
+        {cfg.cvUrl && <LinkPill href={cfg.cvUrl} label="Curriculum Vitae" />}
         {/* Optional footnote — displayed at the bottom of the About Me card */}
         {cfg.footnote && (
           <p
@@ -244,17 +223,8 @@ function SelectedPublicationsCard({ onNav }: { onNav: (page: string) => void }) 
               </p>
             )}
             {/* Paper link */}
-            <div style={{ fontSize: 13, color: palette.textSoft }}>
-              {pub.pdf && (
-                <a
-                  href={pub.pdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: palette.accent, textDecoration: "none", marginRight: 8 }}
-                >
-                  [Paper]
-                </a>
-              )}
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+              {pub.pdf && <LinkPill href={pub.pdf} label="Paper" />}
             </div>
           </div>
         </div>

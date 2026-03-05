@@ -163,7 +163,7 @@ export function CardBody({ children, style = {} }: { children: ReactNode; style?
 // A small rounded button that links to an external URL (email, GitHub, etc.).
 // Changes color and background on hover using React state (not CSS :hover,
 // because we're using inline styles which don't support pseudo-selectors).
-export function LinkPill({ href, label }: { href: string; label: string }) {
+export function LinkPill({ href, label, icon }: { href: string; label: string; icon?: string }) {
   const [hovered, setHovered] = useState(false);
   return (
     <a
@@ -185,7 +185,7 @@ export function LinkPill({ href, label }: { href: string; label: string }) {
         whiteSpace: "nowrap",     // Prevent text wrapping inside pill
       }}
     >
-      {label} ↗
+      {icon && <i className={icon} style={{ marginRight: 6 }} />}{label} ↗
     </a>
   );
 }

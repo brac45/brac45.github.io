@@ -60,7 +60,7 @@ export const siteConfig: SiteConfig = {
   name: "Michael (Jong Ho) Lee",
   shortName: "Michael Lee",
   title: "PhD Candidate",
-  affiliation: "College of Information, University of Maryland, College Park",
+  affiliation: "Human-Computer Interaction Lab\nUniversity of Maryland, College Park",
   profileImage: "/images/profile.png",
 
   // Links — leave empty string to hide
