@@ -87,6 +87,7 @@ export const siteConfig: SiteConfig = {
     {
       date: "2026-03-02",
       title: "New paper on co-designing user-programmable AI AAC tools for aphasia is accepted to CHI'26!",
+      link: "/pubs/lee-codesign-diy-aac-aphasia-chi26.pdf"
     },
     {
       date: "2025-10-27",

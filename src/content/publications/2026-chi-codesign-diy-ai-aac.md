@@ -11,6 +11,6 @@ tags:
   - Aphasia
   - Co-Design
   - End-user Programming
-pdf: "https://doi.org/10.1145/3772318.3790321"
+pdf: "/pubs/lee-codesign-diy-aac-aphasia-chi26.pdf"
 doi: "https://doi.org/10.1145/3772318.3790321"
 ---
