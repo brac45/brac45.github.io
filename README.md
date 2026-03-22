@@ -1,6 +1,5 @@
-# brac45.github.io
-
-Personal academic website for Jong Ho Lee — built with Vite + React, deployed on GitHub Pages.
+# Personal Website
+Built using React + Github pages.
 
 ## Development
 
